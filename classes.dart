@@ -2,6 +2,13 @@
 
 library coordinates.dart; // Creates a library called coordinate.dart
 
+class Example {
+  static const name = "Example";
+  static printName() {
+    print(name);
+  }
+}
+
 class Coordinate {
   final String
       _point; // Putting underscore makes members only available in file they were made
@@ -33,4 +40,8 @@ void main() {
   Coordinate c2 = Coordinate("A", 0, 1);
   print(c1._point);
   print(c2.x);
+
+  // Static values are stored at the class level
+  print(Example.name);
+  Example.printName();
 }
