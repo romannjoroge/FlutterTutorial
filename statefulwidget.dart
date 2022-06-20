@@ -34,3 +34,51 @@ class MyButton extends StatefulWidget {
 class MyButtonState extends State<MyButton> {
   int counter = 0;
   MyButtonState();
+
+  // Function to increment  counter
+  void increment_counter() {
+    if (counter >= 10) {
+      counter = 0;
+    } else {
+      counter++;
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Text(
+          "$counter",
+          style: const TextStyle(
+            color: Colors.black,
+          ),
+        ),
+        IconButton(
+            icon: const Icon(Icons.add),
+            tooltip: "Increment counter by 1",
+            onPressed: () {
+              setState(increment_counter);
+            }),
+      ],
+    );
+  }
+}
+
+class AppScaffold extends StatelessWidget {
+  const AppScaffold();
+
+  @override
+  Widget build(BuildContext context) {
+    return Material(
+      child: Column(
+        children: const [
+          AppBar(title: "Welcome to My App!"),
+          MyButton(),
+        ],
+      ),
+    );
+  }
+}
+
+void main() => runApp(const MaterialApp(home: AppScaffold()));
