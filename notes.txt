@@ -1,0 +1,59 @@
+DART
+- Dart uses a main function as the entry point for the program once it is ran in a similar way to C
+    void main(){
+        print("Hello World!")
+    }
+- To include a value into a string use ${} syntax e.g "Hello ${name}"
+
+
+    VARIABLES
+- Notes on variables are in variables.dart
+- Variables are created with the following syntax:
+    <keyword> variable_name = value;
+- var accepts values of any type but once assigned it can only accept values of a specific type e.g
+    var variable = <value_of_any_type>
+    // Once variable is given a value eg a string it can only hold strings
+- dynamic can hold values of any type and once assigned the type of the value can be changed
+- final accepts a value of any type but once assinged the value is constant
+- variables created with the final keyword can be given a value when the program is run but with const the value
+  has to be given when typing the code
+
+    BRANCHING
+- Examples in control-statements.dart
+- The structure of the if statements is:
+    if(boolean_expression){
+        do_something;
+    }else if(another_expression){
+
+    }else{
+
+    }
+
+- switch(expression){
+    case (value):
+        do_something;
+        break;
+    default:
+        do_something;
+}
+
+    ITERATION
+- Examples in control-statements.dart
+- You can create normal for loops like this
+    for (<initiate_variable>, <change_value>, <condition_to_stop>){
+        do_something;
+    }
+- You can also iterate over all the items in an iterable e.g
+    for (<initiate_variable> in <iterable>){
+        do_something;
+    }
+- You can also use a while loop
+    while(condition){
+        do_something;
+        move_towards_ending_condition;
+    }
+
+    DATA STRUCTURES
+- Examples in datatypes.dart
+- Lists are instances of the List<data_type> class. To create a list:
+    List<data_type> variable_name = value

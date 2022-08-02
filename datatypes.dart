@@ -26,7 +26,7 @@ void main() {
   // need for checks when righting code that only uses enum values
 
   // Dart doesn't have array only has a template list class
-  List<int> int_list = List<int>.filled(50, 0, growable: true);
+  List<int> int_list = List<int>.filled(5, 0, growable: true);
   for (var i in int_list) {
     print(i);
   }

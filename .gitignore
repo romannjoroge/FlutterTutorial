@@ -1,1 +1,3 @@
 .vscode/launch.json
+.dart_tool
+.packages
