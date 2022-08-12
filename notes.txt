@@ -57,3 +57,11 @@ DART
 - Examples in datatypes.dart
 - Lists are instances of the List<data_type> class. To create a list:
     List<data_type> variable_name = value
+
+    FLUTTER
+- UIs in flutter are made up of a widget tree.....everything that's visible on the screen is a widget
+- Widgets are instances of the Widget class with a child attribute that contains other Widgets
+- The runApp() function is ran in the main function and takes a widget as an arguement. The widget is the root
+  of the widget tree.
+- The function Widget build(BuildContext context) adds new leaves to the widget tree in order
+  to place new graphical items in the UI.
